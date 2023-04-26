@@ -1,0 +1,15 @@
+on: workflow_dispatch
+
+jobs:
+  deploy-to-gist:
+    name: deploy-to-gist
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy-to-gist
+      - uses: actions/checkout@v3
+        uses: uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_TOKEN }}
+          gist_id: 03b1ed5602f6940a0d97085eaca72ae8
+          file_path: ./README.md
+          file_type: binary
