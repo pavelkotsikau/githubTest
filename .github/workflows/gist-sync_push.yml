@@ -4,7 +4,7 @@ on:
       - master
     paths:
 #      - 'component-registry/components/*.json
-      - 'githubTest/*.adoc
+      - githubTest/*.adoc
 
 jobs:
   gist-sync:
