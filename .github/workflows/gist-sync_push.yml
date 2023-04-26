@@ -3,7 +3,7 @@ on:
     branches:
       - master
     paths:
-      - ./test.adoc
+      - './test.adoc'
 
 jobs:
   gist-sync:
