@@ -1,0 +1,26 @@
+on:
+  push:
+    branches:
+      - master
+    paths:
+#      - 'component-registry/components/*.json
+      - 'githubTest/*.adoc
+
+jobs:
+  gist-sync:
+    name: gist-sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: popsiclestick/gist-sync-action@v1.2.0
+        id: sync
+        with:
+          auth: ${{ secrets.GIST_TOKEN }}
+          gist_url: https://gist.github.com/pavelkotsikau/1d0337a6011389adf6170db1638fdafd
+          gist_title: test.adoc
+          gist_description: Example Gist Description
+          github_file: ./test.adoc
+
+      
+      
