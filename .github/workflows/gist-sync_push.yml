@@ -3,7 +3,7 @@ on:
     branches:
       - master
     paths:
-      - ./docs/test.adoc
+      - ./test.adoc
 
 jobs:
   gist-sync:
@@ -19,6 +19,6 @@ jobs:
           gist_url: https://gist.github.com/pavelkotsikau/1d0337a6011389adf6170db1638fdafd
           gist_title: test.adoc
           gist_description: Example Gist Description
-          github_file: ./docs/test.adoc
+          github_file: ./test.adoc
       
       
