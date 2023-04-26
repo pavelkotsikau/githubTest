@@ -1,0 +1,14 @@
+on: workflow_dispatch
+
+jobs:
+  gist-sync:
+    name: Gist Repo Sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Gist Repo Sync
+        uses: pentatonicfunk/action-gist-repo-sync@v1
+        with:
+          gist_token: ${{ secrets.GIST_TOKEN }}
+          gist_id: 037c23c7a89f467a333d1de6ce02f7db
