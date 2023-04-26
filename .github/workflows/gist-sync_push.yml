@@ -3,7 +3,7 @@ on:
     branches:
       - master
     paths:
-      - githubTest/docs/test.adoc
+      - ./docs/test.adoc
 
 jobs:
   gist-sync:
