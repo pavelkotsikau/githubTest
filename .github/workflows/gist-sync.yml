@@ -1,0 +1,17 @@
+on: workflow_dispatch
+
+jobs:
+  gist-sync:
+    name: gist-sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: popsiclestick/gist-sync-action@v1.2.0
+        id: sync
+        with:
+          auth: ${{ secrets.GIST_TOKEN }}
+          gist_url: https://gist.github.com/pavelkotsikau/037c23c7a89f467a333d1de6ce02f7db
+          gist_title: Example Gist Title
+          gist_description: Example Gist Description
+          github_file: ./README.md
