@@ -11,7 +11,7 @@ jobs:
         id: sync
         with:
           auth: ${{ secrets.GIST_TOKEN }}
-          gist_url: https://gist.github.com/pavelkotsikau/037c23c7a89f467a333d1de6ce02f7db
+          gist_url: https://gist.github.com/pavelkotsikau/03b1ed5602f6940a0d97085eaca72ae8
           gist_title: test.adoc
           gist_description: Example Gist Description
           github_file: ./test.adoc
