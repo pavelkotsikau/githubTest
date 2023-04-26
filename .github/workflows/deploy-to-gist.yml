@@ -10,6 +10,6 @@ jobs:
         uses: exuanbo/actions-deploy-gist@v1
         with:
           token: ${{ secrets.TOKEN }}
-          gist_id: 03b1ed5602f6940a0d97085eaca72ae8
+          gist_id: pavelkotsikau/03b1ed5602f6940a0d97085eaca72ae8
           file_path: ./README.md
           file_type: binary
