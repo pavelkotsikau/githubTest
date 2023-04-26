@@ -14,4 +14,4 @@ jobs:
           gist_url: https://gist.github.com/pavelkotsikau/03b1ed5602f6940a0d97085eaca72ae8
           gist_title: test.adoc
           gist_description: Example Gist Description
-          github_file: ./test.adoc
+          github_file: ./README.md
